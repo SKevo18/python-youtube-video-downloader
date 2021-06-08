@@ -53,7 +53,7 @@ def save_video(path: Union[Path, str, bytes], video_url: str):
     request = requests.get(video_url, stream=True)
 
 
-    if not path.endswith(".mp4"):
+    if not str(path).endswith(".mp4"):
         raise TypeError("Video file name to save must end with '.mp4'.")
 
     if os.path.exists(str(path)):
