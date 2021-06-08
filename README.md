@@ -4,7 +4,7 @@
 
 So, I was bored and made a bulk YouTube video downloaded that fetches YouTube video data from https://subscriptions.gir.st/
 
-1. First, paste YouTube video URLs/codes in video_urls.txt (separated by newlines)
+1. First, paste YouTube video URLs/codes in `video_urls.txt` (separated by newlines)
 2. Then run __main__.py. All videos will be downloaded in the "saved_videos" directory (you might need to create it).
 
 Valid YouTube URLs are (thank you [@phuc77 at Stackoverflow](https://stackoverflow.com/questions/19377262/regex-for-youtube-url) for RegEx to validate YouTube URLs):
@@ -25,6 +25,8 @@ http://m.youtube.com/watch?v=DFYRQ_zQ-gk
 //m.youtube.com/watch?v=DFYRQ_zQ-gk
 m.youtube.com/watch?v=DFYRQ_zQ-gk
 ```
+
+The videos are downloaded in order they are in `video_urls.txt`. Video files are named in the following format: `<video title>.mp4`.
 
 **Requires:** [requests](https://pypi.org/project/requests/) & Python ^3.6 (tested on 3.9.1 Windows 10 64-bit & Ubuntu 20.4 LTS, I can't guarantee that this will work for you)
 
