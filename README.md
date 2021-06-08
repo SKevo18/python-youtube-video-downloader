@@ -4,6 +4,9 @@
 
 So, I was bored and made a bulk YouTube video downloaded that fetches YouTube video data from https://subscriptions.gir.st/
 
+Huge thanks to guys that made https://subscriptions.gir.st/, this project wouldn't be possible without their JSON API to obtain the videos.
+Very cool YouTube website client by the way, check it out!
+
 1. First, paste YouTube video URLs/codes in `video_urls.txt` (separated by newlines)
 2. Then run __main__.py. All videos will be downloaded in the "saved_videos" directory (you might need to create it).
 
@@ -33,6 +36,9 @@ The videos are downloaded in order they are in `video_urls.txt`. Video files are
 - Licensed under "MIT" license. Feel free to change the source code, however crediting me or at least linking this repo is very appreciated.
 
 # QaA:
+
+### I can't download videos because https://subscriptions.gir.st/ is down
+https://subscriptions.gir.st/ is not my project, please ask their authors about it (https://git.gir.st/subscriptionfeed.git)
 
 ### Why did you develop this?
 I wanted to bulk-download 10 second memes so I can send them to my friends during corona crisis...
