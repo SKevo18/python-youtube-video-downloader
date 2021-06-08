@@ -7,18 +7,6 @@ from typing import Callable, Generator, Tuple, Union, Dict, List
 from pathlib import Path
 ROOT_PATH = Path(__file__).parent.absolute()
 
-from dotenv import load_dotenv
-load_dotenv()
-
-GOOGLE_API_KEY = os.environ.get("GOOGLE_API_KEY", None)
-
-
-def get_urls_from_playlist(playlist_url: str, save_to: Union[Path, str, bytes]=Path(f"{ROOT_PATH}/video_urls.txt")):
-    if not GOOGLE_API_KEY:
-        raise Exception("Missing 'GOOGLE_API_KEY' environment variable.")
-
-    json_data = requests.get()
-
 
 def __get_raw_urls(from_file: Union[Path, str, bytes]=Path(f"{ROOT_PATH}/video_urls.txt")) -> Generator[str, None, None]:
     for line in open(from_file, "r"):
