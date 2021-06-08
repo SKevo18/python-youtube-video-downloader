@@ -1,4 +1,5 @@
 .env
 
-saved_videos/
+saved_videos/*
+!.gitkeep
 video_urls.txt
