@@ -40,6 +40,18 @@ The videos are downloaded in order they are in `video_urls.txt`. Video files are
 ### I can't download videos because https://subscriptions.gir.st/ is down
 https://subscriptions.gir.st/ is not my project, please ask their authors about it (https://git.gir.st/subscriptionfeed.git)
 
+### How large are the downloaded videos:
+Depends on the video quality and video length. FYI this tool always downloads the video with highest width/quality.
+
+A 30 second 720p video has about 4 MB. 50 of these ~~memes~~ videos make at around 50 MB.
+
+### How do I download video of a specific/lower quality?
+
+Right now, the highest video quality is downloaded and this cannot be changed. The higher the width of the video in pixels, the higher the quality is.
+
+In the future, I plan to add some option to download specific quality, although these are named very differently in the JSON API response
+(ex. 720 can be both 720hd and 720p), that's why I went with a cheap highest-width-means-highest-quality system.
+
 ### Why did you develop this?
 I wanted to bulk-download 10 second memes so I can send them to my friends during corona crisis...
 
