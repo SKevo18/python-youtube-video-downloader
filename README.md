@@ -1,11 +1,10 @@
 # Python bulk YouTube video downloader
 
-### [!] This project is for educational purposes only! Use at your own risk!
+So, I was bored and made a bulk YouTube video downloaded that fetches YouTube video data from Invidious.
 
-So, I was bored and made a bulk YouTube video downloaded that fetches YouTube video data from https://subscriptions.gir.st/
+### Update:
 
-Huge thanks to guys that made https://subscriptions.gir.st/, this project wouldn't be possible without their JSON API to obtain the videos.
-Very cool YouTube website client by the way, check it out!
+This project was made before I created [Invidious API Client](https://github.com/CWKevo/python-invidious-api-client) and later [Piped API client](https://github.com/CWKevo/python-piped-api-client). Be sure to check them out!
 
 1. First, paste YouTube video URLs/codes in `video_urls.txt` (separated by newlines)
 2. Then run __main__.py. All videos will be downloaded in the "saved_videos" directory (you might need to create it).
@@ -37,14 +36,6 @@ The videos are downloaded in order they are in `video_urls.txt`. Video files are
 
 # QaA:
 
-### I can't download videos because https://subscriptions.gir.st/ is down
-https://subscriptions.gir.st/ is not my project, please ask their authors about it (https://git.gir.st/subscriptionfeed.git)
-
-### How large are the downloaded videos:
-Depends on the video quality and video length. FYI this tool always downloads the video with highest width/quality.
-
-A 30 second 720p video has about 4 MB. 50 of these ~~memes~~ videos make at around 50 MB.
-
 ### How do I download video of a specific/lower quality?
 
 Right now, the highest video quality is downloaded and this cannot be changed. The higher the width of the video in pixels, the higher the quality is.
@@ -53,7 +44,7 @@ In the future, I plan to add some option to download specific quality, although 
 (ex. 720 can be both 720hd and 720p), that's why I went with a cheap highest-width-means-highest-quality system.
 
 ### Why did you develop this?
-I wanted to bulk-download 10 second memes so I can send them to my friends during corona crisis...
+I wanted to bulk-download 10 second memes so I can send them to my friends
 
 ### How long did it take you to develop this?
 2 hours and the initial working version was available at GitHub.
@@ -67,3 +58,24 @@ always remember to stay clear, polite, patient and respectful to others. I will 
 
 ### Do you have other Python projects?
 Yes, check my profile
+
+## 🎁 Support me
+
+I create free software to benefit people.
+If this project helps you and you like it, consider supporting me by donating via cryptocurrency:
+
+| Crypto            | Address                                                                                           |
+| ----------------- | ------------------------------------------------------------------------------------------------- |
+| Bitcoin           | [E-mail me](mailto:me@kevo.link)                                                                  |
+| Ethereum          | `0x12C598b3bC084710507c9d6d19C9434fD26864Cc`                                                      |
+| Litecoin          | `LgHQK1NQrRQ56AKvVtSxMubqbjSWh7DTD2`                                                              |
+| Dash              | `Xe7TYoRCYPdZyiQYDjgzCGxR5juPWV8PgZ`                                                              |
+| Zcash:            | `t1Pesobv3SShMHGfrZWe926nsnBo2pyqN3f`                                                             |
+| Dogecoin:         | `DALxrKSbcCXz619QqLj9qKXFnTp8u2cS12`                                                              |
+| Ripple:           | `rNQsgQvMbbBAd957XyDeNudA4jLH1ANERL`                                                              |
+| Monero:           | `48TfTddnpgnKBn13MdJNJwHfxDwwGngPgL3v6bNSTwGaXveeaUWzJcMUVrbWUyDSyPDwEJVoup2gmDuskkcFuNG99zatYFS` |
+| Bitcoin Cash:     | `qzx6pqzcltm7ely24wnhpzp65r8ltrqgeuevtrsj9n`                                                      |
+| Ethereum Classic: | `0x383Dc3B83afBD66b4a5e64511525FbFeb2C023Db`                                                      |
+
+More cryptocurrencies are supported. If you are interested in donating with a different one, please [E-mail me](mailto:me@kevo.link).
+No other forms of donation are currently supported.
